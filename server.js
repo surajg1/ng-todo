@@ -4,13 +4,18 @@ const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static('./dist/{{todo-app}}'));
+const PORT = process.env.PORT || 8006
+    // Serve only the static files form the angularapp directory
+app.use(express.static(__dirname + '/todo-app'));
 
 app.get('/*', function(req, res) {
 
-    res.sendFile(path.join(__dirname, '/dist/{{todo-app}}/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+
+
+app.listen(PORT, () => {
+    console.log(" Server is Runnng in " + PORT);
+})
