@@ -1,3 +1,4 @@
+//express requrire for access the index.html in dist folder.dist folder is created by ng build command
 const express = require('express');
 
 path = require('path');
