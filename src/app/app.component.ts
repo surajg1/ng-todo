@@ -7,8 +7,9 @@ import { Todo } from "./todo";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'Suraj ToDo App.';
+  title = 'Suraj ToDo App:)';
 
   todoValue:string;
   list :Todo[];
@@ -22,7 +23,6 @@ export class AppComponent {
 
   addItem(){
     if(this.todoValue !== ""){
-
       const newItem : Todo ={
         id: Date.now(),
         values:this.todoValue,
@@ -34,7 +34,6 @@ export class AppComponent {
   }
 
   deleteItem(id:number){
-    this.list=this.list.filter(item => item.id!==id);
-    
+    this.list=this.list.filter(item => item.id!==id);  
   }
 }

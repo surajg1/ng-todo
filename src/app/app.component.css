@@ -188,7 +188,7 @@ h1 {
     align-self: auto;
     background-color: transparent;
     left: 140px;
-    border: 2px solid #4CAF50;
+    border: 1px solid #4CAF50;
     size: 30px;
     padding: 15px 32px;
     color: rgb(16, 219, 118);
@@ -206,4 +206,63 @@ h1 {
     padding: 5px 11px;
     color: darkorange;
     cursor: pointer;
+}
+
+.addjust {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width:412px) {
+    .logo {
+        position: relative;
+        left: -8%;
+    }
+    h1 {
+        position: absolute;
+        font-size: 30px;
+        font-family: "Lucida Console", Monaco, monospace;
+        top: 95px;
+        color: chartreuse;
+        text-align: center;
+    }
+    #namer input {
+        position: relative;
+        border: 0;
+        top: 0%;
+        right: 50%;
+        border-bottom: 2px solid rgb(210, 25, 40);
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+        height: 30px;
+        text-align: center;
+        padding: 10px;
+        background: transparent;
+        color: #BBDEFB;
+    }
+    .add-btn {
+        position: relative;
+        background-color: transparent;
+        left: -2.5rem;
+        top: -1.5rem;
+        border: 2px solid #4CAF50;
+        size: 1px;
+        padding: 10px 30px;
+        color: rgb(228, 37, 186);
+        cursor: pointer;
+    }
+    .container {
+        top: 180px;
+    }
+    h4 {
+        font-size: 25px;
+        left: 50%;
+        right: 50%;
+    }
+    .addjust {
+        position: absolute;
+        font-size: 23px;
+        left: -2rem;
+        right: 50%;
+    }
 }
